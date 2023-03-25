@@ -10,7 +10,7 @@ name = input("What is your name?\n")
 
 print ("Hello " + name )
 
-# CHANGING DATA TYPE 
+# CHANGING DATA TYPE
 age = int(input("What is your age ? \n"))
 
 print("You are "+str(age) +" years old")
