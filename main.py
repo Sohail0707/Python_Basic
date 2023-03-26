@@ -53,20 +53,55 @@ is_adult = True
 
 
 
-# BUILDING A SIMPLE CLCULATOR USING IF/ELSE
-first = float(input("Enter the first number: "))
-operator = input("Enter the operator (+, -, /, *, %): ")
-second = float(input("Enter the second  number: "))
+# BUILDING A SIMPLE CLCULATOR USING IF/ELSE ////////////////
+# first = float(input("Enter the first number: "))
+# operator = input("Enter the operator (+, -, /, *, %): ")
+# second = float(input("Enter the second  number: "))
 
-if operator == '+':
-    print(first + second)
-elif operator == '-':
-    print(first - second)
-elif operator == '/':
-    print(first / second)
-elif operator == '*':
-    print(first * second)
-elif operator == '%':
-    print(first % second)
-else: 
-    print("Wrong input")
+# if operator == '+':
+#     print(first + second)
+# elif operator == '-':
+#     print(first - second)
+# elif operator == '/':
+#     print(first / second)
+# elif operator == '*':
+#     print(first * second)
+# elif operator == '%':
+#     print(first % second)
+# else: 
+#     print("Wrong input")
+
+# LOOPS IN PYTHON (WHILE LOOP) ///////////////////////////////
+i=1
+while i <= 10:
+    print(i  * '*')
+    i += 1
+
+# FOR LOOP ///////////////////////////////////////////////////
+
+for j in range(10): # FOR EVERY j IN RANGE OF 0-9 
+    print(j) # WILL PRINT 0,1,2,3,.....,9 
+
+
+print(3 in range(8)) # RETURNS TRUE IF 3 IS BETWEEN 0-7 OR 0-(1-8)
+
+# LIST IN PYTHON ////////////////////////////////////////////
+marks = [20,54,47,64]
+print(marks) # PRINTS THE ARRAY 'marks'
+print(marks[2]) # PRINTS THE 3rd ELEMENT OF 'marks'. BESAUSE PYTHON STARTS THE INDEX FROM 0
+print(marks[-1]) # PRINTS THE LAST ELEMENT, IF IT'S [-2], IT WILL PRINT 2nd LAST AND SO ON
+print(marks[0:3]) # PRINTS THE ELEMENT 0,1 AND 2 
+
+# APPENDING OR ADDING NEW DATA IN THE LIST
+marks.append(45)
+print(marks)
+
+marks.insert(0,32) # WILL INSERT OR ADD 32 AT 0th INDEX OF 'marks' AND UPDATE IT
+print(marks)
+
+# PRINTING DATA USING FOR LOOP
+for i in marks:
+    print(i)
+
+marks.clear() # WILL CLEAR THE LIST
+print(marks)
