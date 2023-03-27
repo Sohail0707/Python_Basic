@@ -136,3 +136,7 @@ print(marks_set) # WILL  PRINT THE UNIQUES VALUE IN THE SET
 # IMPLEMENTING DICTIONARY //////////////////////////////////////
 info = {"name":"Sohail Rana", "number":8348512130, "age": 21}
 print(info["name"]) # WILL PRINT THE VALUE OF "name" IN THE DICTIONARY
+info["gender"] =  "Male" # ADDED THE NEW INFO 
+print(info)
+info["name"] = "Arian" #  MODIFIED THE "name"
+print(info)
