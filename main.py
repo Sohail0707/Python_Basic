@@ -140,3 +140,10 @@ info["gender"] =  "Male" # ADDED THE NEW INFO
 print(info)
 info["name"] = "Arian" #  MODIFIED THE "name"
 print(info)
+
+# IMPLEMENTING A FUNCTION
+def sum( first, second):
+    sum = first + second
+    return sum
+
+print(sum(3,5))
