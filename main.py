@@ -86,25 +86,25 @@ for j in range(10): # FOR EVERY j IN RANGE OF 0-9
 print(3 in range(8)) # RETURNS TRUE IF 3 IS BETWEEN 0-7 OR 0-(1-8)
 
 # LIST IN PYTHON ////////////////////////////////////////////
-marks = [20,54,47,64]
-print(marks) # PRINTS THE ARRAY 'marks'
-print(marks[2]) # PRINTS THE 3rd ELEMENT OF 'marks'. BESAUSE PYTHON STARTS THE INDEX FROM 0
-print(marks[-1]) # PRINTS THE LAST ELEMENT, IF IT'S [-2], IT WILL PRINT 2nd LAST AND SO ON
-print(marks[0:3]) # PRINTS THE ELEMENT 0,1 AND 2 
+marks_list = [20,54,47,64]
+print(marks_list) # PRINTS THE ARRAY 'marks'
+print(marks_list[2]) # PRINTS THE 3rd ELEMENT OF 'marks'. BESAUSE PYTHON STARTS THE INDEX FROM 0
+print(marks_list[-1]) # PRINTS THE LAST ELEMENT, IF IT'S [-2], IT WILL PRINT 2nd LAST AND SO ON
+print(marks_list[0:3]) # PRINTS THE ELEMENT 0,1 AND 2 
 
 # APPENDING OR ADDING NEW DATA IN THE LIST
-marks.append(45)
-print(marks)
+marks_list.append(45)
+print(marks_list)
 
-marks.insert(0,32) # WILL INSERT OR ADD 32 AT 0th INDEX OF 'marks' AND UPDATE IT
-print(marks)
+marks_list.insert(0,32) # WILL INSERT OR ADD 32 AT 0th INDEX OF 'marks' AND UPDATE IT
+print(marks_list)
 
 # PRINTING DATA USING FOR LOOP
-for i in marks:
+for i in marks_list:
     print(i)
 
-marks.clear() # WILL CLEAR THE LIST
-print(marks)
+marks_list.clear() # WILL CLEAR THE LIST
+print(marks_list)
 
 
 # BREAK AND CONTINUE //////////////////////////////////////////
@@ -122,3 +122,17 @@ for j in name:
         continue # WILL SKIP THE NAME "alamin" AND CONTINUE THE EXECUTION
 
     print(j)
+
+
+# IMPLEMENTING TUPLE /////////////////////////////////////////
+marks_tuple = (21,34,98,54,75,75,75) # THIS IS A TUPLE (KEEP IN MIND WE CANNOT EDIT OR MODIFY A TUPLE ) * () IS NOT NECESSERY
+print(marks_tuple.count(75)) # RETURNS HOW MUCH TIME THE VALUE OCCURES IN THE TUPLE
+print(marks_tuple.index(98)) # RETURNS THE INDEX OF THE VALUE
+
+# IMPLEMENTING SET /////////////////////////////////////////// 
+marks_set = {21,34,56,32,54,32,56,56,32,32} # SET IS AN UNORDERED LIST. IT DOES NOT PRINT DUPLICATE VALUE
+print(marks_set) # WILL  PRINT THE UNIQUES VALUE IN THE SET 
+
+# IMPLEMENTING DICTIONARY //////////////////////////////////////
+info = {"name":"Sohail Rana", "number":8348512130, "age": 21}
+print(info["name"]) # WILL PRINT THE VALUE OF "name" IN THE DICTIONARY
