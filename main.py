@@ -105,3 +105,20 @@ for i in marks:
 
 marks.clear() # WILL CLEAR THE LIST
 print(marks)
+
+
+# BREAK AND CONTINUE //////////////////////////////////////////
+name = ["sohail", "rocky", "alamin", "izaz"]
+for i in name:
+    if i == "alamin":
+        break # IF NAME IS "alamin", LOOP WILL BE EXIT
+
+    print(i)
+
+print("//////////////////////////////////////////////")
+
+for j in name:
+    if j == "alamin":
+        continue # WILL SKIP THE NAME "alamin" AND CONTINUE THE EXECUTION
+
+    print(j)
